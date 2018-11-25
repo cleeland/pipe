@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {applyPrefs = id; showFontSelector = id; }; 
+            CLASS = AppearancePreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fontTextField = NSTextField; }; 
+            SUPERCLASS = JGPreferencePane; 
+        }, 
+        {
+            ACTIONS = {configureExternalEditor = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = JGPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {contentView = NSView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

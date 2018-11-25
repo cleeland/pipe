@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=macintosh">
+	<meta name="keywords" content="faq, qa, troubleshooting, nothing, no results">
+	<meta name="description" content="Why you may get apparently no results when using Pipe services in a text field">
+	<title>Empty text fields after using Pipe services</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1><img class="appicon" src="appicon-small.png"><a name="PipeEmptyTextFieldWithServicesTopic">Empty text fields after using Pipe services</a></h1>
+
+<p>
+When you use Pipe as a service from a single-line text field like Safari’s address bar, it may look as if it returns no output.
+
+<p>
+This usually happens when the script output includes a new line character at the end (most scripts do that). The text field isn't really empty, it is just scrolled down by one line. Pressing backspace should show you the actual results.
+</p>
+
+<p>
+To prevent this from happening, make sure your scripts output only a single line without a new line character.
+</p>
+
+</body>
+</html>

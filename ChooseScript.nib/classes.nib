@@ -1,0 +1,38 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {cancel = id; okay = id; }; 
+            CLASS = ChooseScriptController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cancelButton = NSButton; 
+                okayButton = NSButton; 
+                scriptPopUpButton = NSPopUpButton; 
+                scriptReferencesController = NSArrayController; 
+                variablesDisclosureButton = NSButton; 
+                variablesTableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = JGExtendedTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            CLASS = ScriptServicesArrayController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {CLASS = VariableTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {
+            CLASS = VariablesTableController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                arrayController = NSArrayController; 
+                sheetWindow = NSWindow; 
+                tableView = JGExtendedTableView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

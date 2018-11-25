@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<suite name="Pipe" code="PiPE" description="Pipe scripting suite.">
+		<cocoa name="Pipe"/>
+		<classes>
+			<class name="application" code="capp" description="Pipe’s top level class." inherits="application">
+				<cocoa class="NSApplication"/>
+				<properties>
+					<property name="script browser" code="ScBp" description="The script browser." type="script browser" access="r">
+						<cocoa method="scriptBrowser"/>
+					</property>
+				</properties>
+			</class>
+			<class name="script document" code="docu" description="A script document." inherits="document">
+				<cocoa class="ScriptDocument"/>
+				<responds-to-commands>
+					<responds-to name="run">
+						<cocoa method="handleRunCommand:"/>
+					</responds-to>
+				</responds-to-commands>
+			</class>
+			<class name="script browser" code="ScBr" description="The script browser." inherits="item">
+				<cocoa class="ScriptBrowserDocument"/>
+				<elements>
+					<element type="script document" access="r">
+						<cocoa method="kwikis"/>
+					</element>
+				</elements>
+				<responds-to-commands>
+					<responds-to name="test">
+						<cocoa method="handleTestCommand:"/>
+					</responds-to>
+				</responds-to-commands>
+			</class>
+		</classes>
+		<commands>
+			<command name="run" code="PiPERnSc" description="Run a script.">
+				<cocoa name="runScript" class="NSScriptCommand"/>
+				<direct-parameter type="script document" description="The script to run."/>
+			</command>
+			<command name="test" code="PiPETest" description="Test something.">
+				<cocoa name="test" class="NSScriptCommand"/>
+				<direct-parameter type="any" description="Anything."/>
+			</command>
+		</commands>
+	</suite>
+</dictionary>

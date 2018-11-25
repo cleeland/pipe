@@ -1,0 +1,117 @@
+{
+    IBClasses = (
+        {
+            CLASS = DataView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {
+                clearAll = id; 
+                encodingListChanged = id; 
+                revertToDefault = id; 
+                selectAll = id; 
+                showPanel = id; 
+            }; 
+            CLASS = EncodingManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                encodingAccessory = NSView; 
+                encodingMatrix = NSMatrix; 
+                encodingPopupButton = EncodingPopUpButton; 
+                ignoreRichTextButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = EncodingPopUpButton; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButton; }, 
+        {
+            ACTIONS = {editScriptSettings = id; runScript = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = InputOutputSplitView; LANGUAGE = ObjC; SUPERCLASS = NSSplitView; }, 
+        {CLASS = JGExtendedTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = JGExtendedTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }, 
+        {CLASS = JGTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {cancel = id; okay = id; runModeChanged = id; showHelp = id; }; 
+            CLASS = ScriptPropertyEditingController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cancelButton = NSButton; 
+                homePageTextField = NSTextField; 
+                inputEncodingPopUp = NSPopUpButton; 
+                inputWritingDirectionPopUp = NSPopUpButton; 
+                okayButton = NSButton; 
+                outputEncodingPopUp = NSPopUpButton; 
+                outputWritingDirectionPopUp = NSPopUpButton; 
+                preferredFileNameTextField = NSTextField; 
+                propertiesPanel = NSPanel; 
+                runCommandTextField = NSTextField; 
+                runModeMatrix = NSMatrix; 
+                scriptEncodingPopUp = NSPopUpButton; 
+                scriptWindow = NSWindow; 
+                serviceCapableCheckBox = NSButton; 
+                tabView = NSTabView; 
+                usageTextView = NSTextView; 
+                writingDirectionBox = NSBox; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addToScriptBrowser = id; 
+                editScriptSettings = id; 
+                focusScript = id; 
+                toggleErrorsDrawer = id; 
+            }; 
+            CLASS = ScriptWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                errorsDrawer = NSDrawer; 
+                errorsTextView = NSTextView; 
+                propertyEditingController = ScriptPropertyEditingController; 
+                scriptTextView = id; 
+            }; 
+            SUPERCLASS = ScriptWindowControllerBase; 
+        }, 
+        {
+            ACTIONS = {
+                focusInput = id; 
+                focusOutput = id; 
+                focusVariables = id; 
+                toggleInfoDrawer = id; 
+            }; 
+            CLASS = ScriptWindowControllerBase; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                documentController = NSObjectController; 
+                horizontalSplitView = NSSplitView; 
+                infoDrawer = NSDrawer; 
+                inputTextView = id; 
+                outputDataView = DataView; 
+                usageInfoTextView = NSTextView; 
+                variablesArrayController = NSArrayController; 
+                variablesTableController = VariablesTableController; 
+                variablesTableView = JGExtendedTableView; 
+                verticalSplitView = NSSplitView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = VariableTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {
+            CLASS = VariablesTableController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                arrayController = NSArrayController; 
+                sheetWindow = NSWindow; 
+                tableView = JGExtendedTableView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

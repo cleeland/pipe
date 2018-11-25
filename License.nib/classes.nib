@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {buyLicense = id; cancel = id; okay = id; }; 
+            CLASS = LicenseWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cancelButton = NSButton; 
+                keyTextField = NSTextField; 
+                okayButton = NSButton; 
+                pleaseEnterTextField = NSTextField; 
+                thankYouTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

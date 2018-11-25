@@ -1,0 +1,77 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                doNothing = id; 
+                enterLicense = id; 
+                openProductWebSite = id; 
+                openReleaseNotes = id; 
+                sendProductFeedback = id; 
+                showPrefs = id; 
+                showScriptBrowser = id; 
+                showScriptLibrary = id; 
+                showWelcomeMessage = id; 
+                switchInputLineEndingsConversion = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {templatesMenu = NSMenu; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addToScriptBrowser = id; 
+                checkForSoftwareUpdates = id; 
+                configureExternalEditor = id; 
+                doNothing = id; 
+                editInExternalEditor = id; 
+                editScriptArguments = id; 
+                editScriptSettings = id; 
+                editSupportFiles = id; 
+                enterLicense = id; 
+                focusInput = id; 
+                focusOutput = id; 
+                focusScript = id; 
+                focusVariables = id; 
+                goToLine = id; 
+                insertFromFile = id; 
+                insertFromURL = id; 
+                myAction = id; 
+                openApplicationWebSite = id; 
+                openLoadedScript = id; 
+                openReleaseNotes = id; 
+                openScriptHomePage = id; 
+                revertToExternalScriptSource = id; 
+                runScript = id; 
+                saveDocumentAsTemplate = id; 
+                saveOutputToFile = id; 
+                saveScriptSourceToFile = id; 
+                sendApplicationFeedback = id; 
+                showApplicationPreferences = id; 
+                showScriptBrowser = id; 
+                showScriptLibrary = id; 
+                stopScript = id; 
+                switchInputLineEndingsConversion = id; 
+                switchOutputType = id; 
+                takeInputFromOutput = id; 
+                toggleAutoIndent = id; 
+                toggleErrorsDrawer = id; 
+                toggleInfoDrawer = id; 
+                toggleLineNumbers = id; 
+                toggleReverseTransformation = id; 
+                writeOutputToFile = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = JGDocumentController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSDocumentController; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

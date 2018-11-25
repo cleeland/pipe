@@ -1,0 +1,42 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                clearAll = id; 
+                encodingListChanged = id; 
+                revertToDefault = id; 
+                selectAll = id; 
+                showPanel = id; 
+            }; 
+            CLASS = EncodingManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                encodingAccessory = NSView; 
+                encodingMatrix = NSMatrix; 
+                encodingPopupButton = EncodingPopUpButton; 
+                ignoreRichTextButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = EncodingPopUpButton; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButton; }, 
+        {
+            ACTIONS = {configureExternalEditor = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = GeneralPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {encodingPopUpButton = NSPopUpButton; }; 
+            SUPERCLASS = JGPreferencePane; 
+        }, 
+        {
+            CLASS = JGPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {contentView = NSView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

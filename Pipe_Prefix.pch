@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'Pipe' target in the 'Pipe' project
+//
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <JaguarFoundation/JaguarFoundation.h>
+#import <JaguarAppKit/JaguarAppKit.h>
+#endif

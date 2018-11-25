@@ -1,0 +1,9 @@
+<?php
+
+$text = file('php://stdin');
+
+foreach ($text as $lineNum => $line) {
+	echo $line;
+}
+
+?>

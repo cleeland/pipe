@@ -1,0 +1,20 @@
+/* Important: If you change the class name below, you must also update the Preferred File Name script setting. Otherwise, the Java compiler will complain. */
+
+import java.io.*;
+
+public class PipeScriptClass {
+
+	public static void main(String[] args) throws IOException {
+		InputStreamReader streamReader;
+		BufferedReader bufferedReader;
+		String line;
+		
+		streamReader = new InputStreamReader(System.in);
+		bufferedReader = new BufferedReader(streamReader);
+		
+		while ((line = bufferedReader.readLine()) != null) {
+			System.out.println(line);
+		}
+	}
+	
+}

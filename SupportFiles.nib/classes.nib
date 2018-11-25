@@ -1,0 +1,16 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addFile = id; cancel = id; okay = id; save = id; }; 
+            CLASS = SupportFilesWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                filesTableView = NSTableView; 
+                supportFilesArrayController = NSArrayController; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

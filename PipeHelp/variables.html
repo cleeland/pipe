@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=macintosh">
+	<meta name="keywords" content="variables, parameters, arguments">
+	<meta name="description" content="How to use script variables">
+	<title>Variables</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1><img class="appicon" src="appicon-small.png"><a name="PipeVariablesTopic">Variables</a></h1>
+
+<p>
+Variables allow you to change the behavior of your scripts. For example, an encryption script could have a variable for the encryption password and another one for the encryption method (algorithm). All variables are passed as simple environment variables to your script. To add a new variable, follow these instructions:
+</p>
+
+<div class="instructions">
+<ol>
+<li>In your script editor, choose “Edit” > “Variables” to show the script's info drawer.</li>
+<li>In the drawer, choose “Add Variable” from the menu that appears when you click the corner button (down-pointing arrow) of the variable list.</li>
+<li>A new variable with the name “untitled” appears in the variable list. Double-click its name to change it to something more suitable.</li>
+<li>To edit the variable’s value, double-click in the “Value” column or press Return.</li>
+</ol>
+</div>
+
+<p>
+The new variable will be accessible from inside your script through an environment variable of the same name. For example, if your variable is named “password”, you can access it in a Bash shell script by typing “$password”.
+</p>
+
+<p>
+Pipe supports four different variable types:
+</p>
+
+<div class="instructions">
+<ul>
+<li><b>Text:</b> A simple text variable. Its value is passed directly to your script without modification.</li>
+<li><b>Password:</b> This is treated like a text variable, but its contents are not displayed in Pipe, which makes it useful for passing passwords to your scripts.</li>
+<li><b>Boolean:</b> A variable that can be switched between only two values: on and off. If a boolean variable is on, the corresponding environment variable in your script will have the value “1”. If the variable is off, the environment variable will be unset.</li>
+<li><b>Enumeration:</b> A variable with a limited list of predefined values. You can configure all possible values by choosing “Enumeration Values…” from the corner menu. In the sheet that appears, enter all values separated by a comma (and no white spaces inbetween).</li>
+</ul>
+</div>
+
+<p>
+The values of variables can be changed in the script editor, in the script browser, and when invoking Pipe from the Services menu. However, the names, numbers, and types of variables can only be changed in the script editor.
+</p>
+
+</body>
+</html>

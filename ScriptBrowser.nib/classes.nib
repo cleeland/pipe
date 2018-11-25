@@ -1,0 +1,77 @@
+{
+    IBClasses = (
+        {
+            CLASS = DataView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {openLoadedScript = id; renameScript = id; revealScriptInFinder = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = InputOutputSplitView; LANGUAGE = ObjC; SUPERCLASS = NSSplitView; }, 
+        {CLASS = JGExtendedTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                editInExternalEditor = id; 
+                insertFromFile = id; 
+                insertFromURL = id; 
+                toggleAutoIndent = id; 
+                toggleSoftWrap = id; 
+            }; 
+            CLASS = JGExtendedTextView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextView; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {focusScript = id; loadSelectedScript = id; }; 
+            CLASS = ScriptBrowserController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                scriptBrowserTableView = JGExtendedTableView; 
+                scriptContextualMenu = NSMenu; 
+                scriptsController = NSArrayController; 
+            }; 
+            SUPERCLASS = ScriptWindowControllerBase; 
+        }, 
+        {
+            ACTIONS = {
+                focusInput = id; 
+                focusOutput = id; 
+                focusVariables = id; 
+                toggleInfoDrawer = id; 
+            }; 
+            CLASS = ScriptWindowControllerBase; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                documentController = NSObjectController; 
+                horizontalSplitView = NSSplitView; 
+                infoDrawer = NSDrawer; 
+                inputTextView = id; 
+                outputDataView = DataView; 
+                usageInfoTextView = NSTextView; 
+                variablesArrayController = NSArrayController; 
+                variablesTableController = VariablesTableController; 
+                variablesTableView = JGExtendedTableView; 
+                verticalSplitView = NSSplitView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = VariableTableColumn; LANGUAGE = ObjC; SUPERCLASS = NSTableColumn; }, 
+        {
+            CLASS = VariablesTableController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                arrayController = NSArrayController; 
+                sheetWindow = NSWindow; 
+                tableView = JGExtendedTableView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

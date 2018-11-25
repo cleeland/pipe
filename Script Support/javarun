@@ -1,0 +1,7 @@
+#!/bin/sh
+
+CLASSNAME=`basename "$1" | cut -f 1 -d.`
+
+/usr/bin/javac "$1"
+/usr/bin/java "$CLASSNAME"
+rm -f $CLASSNAME.class

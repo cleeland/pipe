@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Transparently run C/C++/Obj-C source code files
+#
+# Usage: gccrun.sh LANGUAGE SOURCEFILE
+#
+# LANGUAGE can be one of c, c++, objective-c, objective-c++
+# More languages may be possible depending on your GCC version.
+# See the gcc -x option description in the gcc(1) man page for a full list.
+#
+
+OBJFILE=`mktemp /tmp/$UID/TemporaryItems/gccrun.XXXXX`
+
+/usr/bin/gcc -o "$OBJFILE" "$@" && "$OBJFILE"
+rm -f "$OBJFILE"

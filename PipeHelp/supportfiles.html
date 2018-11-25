@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=macintosh">
+	<meta name="keywords" content="">
+	<meta name="description" content="How to add and remove support files for a script">
+	<title>Script Support Files</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1><img class="appicon" src="appicon-small.png"><a name="PipeScriptSupportFilesTopic">Script Support Files</a></h1>
+
+<p>
+You can include support files with your scripts, which will be distributed along with your script code:
+</p>
+
+<div class="instructions">
+<ol>
+<li>In the script editor, choose “Script” > “Support Files…”.</li>
+<li>In the sheet that appears, either click the “+” button to open a file selection dialog, or drag files from the Finder into the white area.</li>
+</ol>
+</div>
+
+<p>
+Support files can be accessed from your scripts through the script support directory specified in the <tt>PIPE_SCRIPT_SUPPORT_PATH</tt> environment variable. For example, if you have added a support file “dictionary.txt”, you can access it from your script through the path “$PIPE_SCRIPT_SUPPORT_PATH/dictionary.txt”.
+</p>
+
+<p>Pipe keeps track of the files that were added to a script, and will automatically update them whenever the original file changes. In the example above, you could edit the “dictionary.txt” file in its original location, and Pipe would automatically update the script whenever it is run.</p>
+
+<p style="font-style: italic">
+Important: Do not edit files stored inside a Pipe script bundle while the script is open in Pipe. Your changes will be overwritten when Pipe saves the script.
+</p>
+
+</body>
+</html>

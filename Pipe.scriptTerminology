@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Classes</key>
+	<dict>
+		<key>NSApplication</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>scriptBrowser</key>
+				<dict>
+					<key>Description</key>
+					<string>The script browser.</string>
+					<key>Name</key>
+					<string>script browser</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>Pipe’s top level class.</string>
+			<key>Name</key>
+			<string>application</string>
+			<key>PluralName</key>
+			<string>applications</string>
+		</dict>
+		<key>ScriptBrowserDocument</key>
+		<dict>
+			<key>Description</key>
+			<string>The script browser.</string>
+			<key>Name</key>
+			<string>script browser</string>
+			<key>PluralName</key>
+			<string>script browsers</string>
+		</dict>
+		<key>ScriptDocument</key>
+		<dict>
+			<key>Description</key>
+			<string>A script document.</string>
+			<key>Name</key>
+			<string>script document</string>
+			<key>PluralName</key>
+			<string>script documents</string>
+		</dict>
+	</dict>
+	<key>Commands</key>
+	<dict>
+		<key>runScript</key>
+		<dict>
+			<key>Description</key>
+			<string>Run a script.</string>
+			<key>Name</key>
+			<string>run</string>
+			<key>UnnamedArgument</key>
+			<dict>
+				<key>Description</key>
+				<string>The script to run.</string>
+			</dict>
+		</dict>
+		<key>test</key>
+		<dict>
+			<key>Description</key>
+			<string>Test something.</string>
+			<key>Name</key>
+			<string>test</string>
+			<key>UnnamedArgument</key>
+			<dict>
+				<key>Description</key>
+				<string>Anything.</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Pipe scripting suite.</string>
+	<key>Name</key>
+	<string>Pipe</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {openProductWebSite = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {okay = id; openWebSiteAndClose = id; }; 
+            CLASS = WelcomeWindowController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
