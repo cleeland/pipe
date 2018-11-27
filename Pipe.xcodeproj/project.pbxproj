@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -663,7 +663,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 837327B821ABA40E0022715D /* Build configuration list for PBXProject "Pipe" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -891,18 +891,21 @@
 		8373276F21ABA3FF0022715D /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.6;
 			};
 			name = Development;
 		};
 		8373277021ABA3FF0022715D /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.6;
 			};
 			name = Deployment;
 		};
 		8373277121ABA3FF0022715D /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.6;
 			};
 			name = Default;
 		};
