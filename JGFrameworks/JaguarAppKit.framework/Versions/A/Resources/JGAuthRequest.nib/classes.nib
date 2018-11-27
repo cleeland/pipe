@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancel = id; enterPassword = id; enterUsername = id; login = id; }; 
+            CLASS = JGAuthRequest; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cancelButton = NSButton; 
+                loginButton = NSButton; 
+                msgTextField = NSTextField; 
+                passwordTextField = NSSecureTextField; 
+                savePasswordButton = NSButton; 
+                usernameTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = "java.lang.Object"; LANGUAGE = Java; }
+    ); 
+    IBVersion = 1; 
+}
