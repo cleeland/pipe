@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839BFCB721AD1FE4004B443F /* JaguarAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839BFCB521AD1FE3004B443F /* JaguarAppKit.framework */; };
+		839BFCB821AD1FE4004B443F /* JaguarFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839BFCB621AD1FE3004B443F /* JaguarFoundation.framework */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -54,10 +56,6 @@
 		ED8669F007CCC96A0017C4A0 /* Welcome.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED8669EF07CCC96A0017C4A0 /* Welcome.nib */; };
 		ED8669FF07CCCBB90017C4A0 /* WelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8669FD07CCCBB90017C4A0 /* WelcomeWindowController.m */; };
 		ED8DA23807C792B4007DC961 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = ED8DA23707C792B4007DC961 /* Credits.html */; };
-		ED92A9FC0813FB8D00CC8006 /* JaguarAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */; };
-		ED92A9FD0813FB8D00CC8006 /* JaguarFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */; };
-		ED92AA3E0813FBC600CC8006 /* JaguarAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		ED92AA3F0813FBC600CC8006 /* JaguarFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		ED9E9486081146840021A8F6 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9480081146840021A8F6 /* Environment.m */; };
 		ED9E9488081146840021A8F6 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9482081146840021A8F6 /* Errors.m */; };
 		ED9E948A081146840021A8F6 /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9484081146840021A8F6 /* UserDefaults.m */; };
@@ -141,8 +139,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ED92AA3E0813FBC600CC8006 /* JaguarAppKit.framework in CopyFiles */,
-				ED92AA3F0813FBC600CC8006 /* JaguarFoundation.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +152,8 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Pipe_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pipe_Prefix.pch; sourceTree = "<group>"; };
+		839BFCB521AD1FE3004B443F /* JaguarAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JaguarAppKit.framework; path = JGFrameworks/JaguarAppKit.framework; sourceTree = "<group>"; };
+		839BFCB621AD1FE3004B443F /* JaguarFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JaguarFoundation.framework; path = JGFrameworks/JaguarFoundation.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0A732C07DF7B0C00A51FA1 /* ScriptDocument+Running.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScriptDocument+Running.h"; sourceTree = "<group>"; };
@@ -232,8 +230,6 @@
 		ED8669FD07CCCBB90017C4A0 /* WelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeWindowController.m; sourceTree = "<group>"; };
 		ED8DA21107C78FC2007DC961 /* PipeHelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PipeHelp; sourceTree = "<group>"; };
 		ED8DA23707C792B4007DC961 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JaguarAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JaguarFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9E947F081146840021A8F6 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
 		ED9E9480081146840021A8F6 /* Environment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
 		ED9E9481081146840021A8F6 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
@@ -292,8 +288,8 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				ED7E9FE007D765D700D51440 /* WebKit.framework in Frameworks */,
-				ED92A9FC0813FB8D00CC8006 /* JaguarAppKit.framework in Frameworks */,
-				ED92A9FD0813FB8D00CC8006 /* JaguarFoundation.framework in Frameworks */,
+				839BFCB721AD1FE4004B443F /* JaguarAppKit.framework in Frameworks */,
+				839BFCB821AD1FE4004B443F /* JaguarFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +389,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */,
-				ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */,
+				839BFCB521AD1FE3004B443F /* JaguarAppKit.framework */,
+				839BFCB621AD1FE3004B443F /* JaguarFoundation.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				ED3399AA07F97E89003A8753 /* UnitKit.framework */,
@@ -972,7 +968,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = /Users/kianga/Library/Caches/Xcode/Products;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/kianga/Library/Caches/Xcode/Products,
+					"$(PROJECT_DIR)/JGFrameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -1007,7 +1006,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				FRAMEWORK_SEARCH_PATHS = /Users/kianga/Library/Caches/Xcode/Products;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/kianga/Library/Caches/Xcode/Products,
+					"$(PROJECT_DIR)/JGFrameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1043,7 +1045,10 @@
 		8373277421ABA3FF0022715D /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = /Users/kianga/Library/Caches/Xcode/Products;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/kianga/Library/Caches/Xcode/Products,
+					"$(PROJECT_DIR)/JGFrameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
