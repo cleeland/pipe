@@ -1,0 +1,1261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		ED0A732F07DF7B0C00A51FA1 /* ScriptDocument+Running.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A732D07DF7B0C00A51FA1 /* ScriptDocument+Running.m */; };
+		ED0CF51007F02B9800C47BA9 /* ScriptVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0CF50E07F02B9800C47BA9 /* ScriptVariable.m */; };
+		ED0CF55B07F04AC800C47BA9 /* ScriptSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0CF55907F04AC800C47BA9 /* ScriptSessionController.m */; };
+		ED0CF58D07F04FFE00C47BA9 /* pipectl.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0CF58C07F04FFE00C47BA9 /* pipectl.m */; };
+		ED19064F07B2657C0064E28E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED19064E07B2657C0064E28E /* Localizable.strings */; };
+		ED1F81C407C2584B0005C933 /* Pipe.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED1F81C307C2584B0005C933 /* Pipe.icns */; };
+		ED1F82B107C25EEB0005C933 /* Pipe Document.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED1F82B007C25EEB0005C933 /* Pipe Document.icns */; };
+		ED23C8EF07F5A8F2001D12A3 /* ScriptServicesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED23C8ED07F5A8F2001D12A3 /* ScriptServicesArrayController.m */; };
+		ED357D4207E36103007478AC /* RunningPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = ED357D4007E36103007478AC /* RunningPreferencePane.m */; };
+		ED357D4807E361EA007478AC /* RunningPreferencePane.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED357D4707E361EA007478AC /* RunningPreferencePane.nib */; };
+		ED357DE207E3637E007478AC /* Appearance Preferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED357DE107E3637E007478AC /* Appearance Preferences.tiff */; };
+		ED357DEA07E3639F007478AC /* AppearancePreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = ED357DE807E3639F007478AC /* AppearancePreferencePane.m */; };
+		ED357DF507E36459007478AC /* AppearancePreferencePane.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED357DF407E36459007478AC /* AppearancePreferencePane.nib */; };
+		ED357E0807E364D3007478AC /* GeneralPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = ED357E0607E364D3007478AC /* GeneralPreferencePane.m */; };
+		ED357E0A07E364E1007478AC /* General Preferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED357E0907E364E1007478AC /* General Preferences.tiff */; };
+		ED357E1807E3660E007478AC /* GeneralPreferencePane.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED357E1707E3660E007478AC /* GeneralPreferencePane.nib */; };
+		ED37E96507F023E80040793B /* ScriptSession.m in Sources */ = {isa = PBXBuildFile; fileRef = ED37E96307F023E80040793B /* ScriptSession.m */; };
+		ED3D33CC07C5E75000B07020 /* ChooseScript.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED3D33CB07C5E75000B07020 /* ChooseScript.nib */; };
+		ED3D33D007C5E76000B07020 /* ChooseScriptController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D33CE07C5E76000B07020 /* ChooseScriptController.m */; };
+		ED3FC69A07D72A380046DC78 /* Bad Image Placeholder.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED3FC69907D72A380046DC78 /* Bad Image Placeholder.tiff */; };
+		ED436F4707E28B8F00D98643 /* EncodingAccessory.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED436F4507E28B8F00D98643 /* EncodingAccessory.nib */; };
+		ED4377EE07E2902F00D98643 /* ScriptDocumentError.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4377EC07E2902F00D98643 /* ScriptDocumentError.m */; };
+		ED53211807D3762100425183 /* DataControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED53211407D3762100425183 /* DataControlView.m */; };
+		ED53211A07D3762100425183 /* DataView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED53211607D3762100425183 /* DataView.m */; };
+		ED6A878D079D32F4005C459E /* ScriptDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6A878B079D32F4005C459E /* ScriptDocument.m */; };
+		ED6A8821079D4AAE005C459E /* ScriptBrowser.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED6A8820079D4AAE005C459E /* ScriptBrowser.nib */; };
+		ED6A8876079D5AEC005C459E /* ScriptBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6A8874079D5AEC005C459E /* ScriptBrowserController.m */; };
+		ED6A8880079D5B2B005C459E /* ScriptReference.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6A887E079D5B2B005C459E /* ScriptReference.m */; };
+		ED6D6BA707E6048E007BD460 /* ScriptDocument+UserInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6D6BA507E6048E007BD460 /* ScriptDocument+UserInterface.m */; };
+		ED6D6BF607E60AF4007BD460 /* ScriptWindowControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6D6BF407E60AF4007BD460 /* ScriptWindowControllerBase.m */; };
+		ED73DD8607C13A8900B2CCCC /* ScriptBrowserDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ED73DD8407C13A8900B2CCCC /* ScriptBrowserDocument.m */; };
+		ED73DDE607C1418D00B2CCCC /* ScriptEditorDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ED73DDE407C1418D00B2CCCC /* ScriptEditorDocument.m */; };
+		ED7A35C707CE1A19006D1774 /* Info Button.tif in Resources */ = {isa = PBXBuildFile; fileRef = ED7A35C607CE1A19006D1774 /* Info Button.tif */; };
+		ED7A36D807CE220E006D1774 /* Errors Button.tif in Resources */ = {isa = PBXBuildFile; fileRef = ED7A36D707CE220E006D1774 /* Errors Button.tif */; };
+		ED7A36ED07CE3640006D1774 /* Home Page Icon.tif in Resources */ = {isa = PBXBuildFile; fileRef = ED7A36EC07CE3640006D1774 /* Home Page Icon.tif */; };
+		ED7C0816079E769D00ADAFA2 /* KwikiController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7C0814079E769D00ADAFA2 /* KwikiController.m */; };
+		ED7E9F8907D7621F00D51440 /* Image Script Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED7E9F8707D7621F00D51440 /* Image Script Icon.tiff */; };
+		ED7E9F8A07D7621F00D51440 /* Text Script Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED7E9F8807D7621F00D51440 /* Text Script Icon.tiff */; };
+		ED7E9FE007D765D700D51440 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7E9FDF07D765D700D51440 /* WebKit.framework */; };
+		ED7EA00907D769BB00D51440 /* HTML Script Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ED7EA00807D769BB00D51440 /* HTML Script Icon.tiff */; };
+		ED8669F007CCC96A0017C4A0 /* Welcome.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED8669EF07CCC96A0017C4A0 /* Welcome.nib */; };
+		ED8669FF07CCCBB90017C4A0 /* WelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8669FD07CCCBB90017C4A0 /* WelcomeWindowController.m */; };
+		ED8DA23807C792B4007DC961 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = ED8DA23707C792B4007DC961 /* Credits.html */; };
+		ED92A9FC0813FB8D00CC8006 /* JaguarAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */; };
+		ED92A9FD0813FB8D00CC8006 /* JaguarFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */; };
+		ED92AA3E0813FBC600CC8006 /* JaguarAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */; };
+		ED92AA3F0813FBC600CC8006 /* JaguarFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */; };
+		ED9E9486081146840021A8F6 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9480081146840021A8F6 /* Environment.m */; };
+		ED9E9488081146840021A8F6 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9482081146840021A8F6 /* Errors.m */; };
+		ED9E948A081146840021A8F6 /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9484081146840021A8F6 /* UserDefaults.m */; };
+		ED9E967708115B4F0021A8F6 /* SupportFileReference.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E967508115B4F0021A8F6 /* SupportFileReference.m */; };
+		ED9E971E081169C40021A8F6 /* SupportFilesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9E971C081169C40021A8F6 /* SupportFilesWindowController.m */; };
+		ED9E972208116A3E0021A8F6 /* SupportFiles.nib in Resources */ = {isa = PBXBuildFile; fileRef = ED9E972108116A3E0021A8F6 /* SupportFiles.nib */; };
+		ED9F7416080927A40094FF1A /* VariablesTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F7414080927A40094FF1A /* VariablesTableController.m */; };
+		ED9F744708092C3C0094FF1A /* VariableTableColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F744508092C3C0094FF1A /* VariableTableColumn.m */; };
+		EDAB957D07E08EFD0087D293 /* EncodingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAB957B07E08EFD0087D293 /* EncodingManager.m */; };
+		EDAB95CB07E091AD0087D293 /* SelectEncodingsPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB95C907E091AD0087D293 /* SelectEncodingsPanel.nib */; };
+		EDACC9AB07E0FB6300B70114 /* Script Support in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED5B7D5707D4AE7200B949D5 /* Script Support */; };
+		EDACC9AC07E0FB6300B70114 /* Templates in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED2B566107D886DA00D438FC /* Templates */; };
+		EDACC9AD07E0FB6300B70114 /* PipeHelp in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED8DA21107C78FC2007DC961 /* PipeHelp */; };
+		EDB8685F07B3C596004B6BDD /* SoftwareLicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8685D07B3C596004B6BDD /* SoftwareLicenseController.m */; };
+		EDB868B207B3D2A7004B6BDD /* License.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDB868B107B3D2A7004B6BDD /* License.nib */; };
+		EDB868B607B3D2AE004B6BDD /* LicenseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB868B407B3D2AE004B6BDD /* LicenseWindowController.m */; };
+		EDDEF87107F9874D00E9716B /* ScriptDocument+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3399AF07F97EA4003A8753 /* ScriptDocument+Tests.m */; };
+		EDDEF87407F9876800E9716B /* UnitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3399AA07F97E89003A8753 /* UnitKit.framework */; };
+		EDDEF8F007F9884000E9716B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		EDDEF93A07F989BE00E9716B /* ScriptDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6A878B079D32F4005C459E /* ScriptDocument.m */; };
+		EDDEFE3407F98E5E00E9716B /* ScriptDocument+Running+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDEFE3207F98E5E00E9716B /* ScriptDocument+Running+Tests.h */; };
+		EDDEFE3507F98E5E00E9716B /* ScriptDocument+Running+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDEFE3307F98E5E00E9716B /* ScriptDocument+Running+Tests.m */; };
+		EDDEFE3607F98EF200E9716B /* ScriptSession.m in Sources */ = {isa = PBXBuildFile; fileRef = ED37E96307F023E80040793B /* ScriptSession.m */; };
+		EDDEFE3707F98F5000E9716B /* ScriptVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0CF50E07F02B9800C47BA9 /* ScriptVariable.m */; };
+		EDDEFE3C07F9901800E9716B /* ScriptDocument+Running.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A732D07DF7B0C00A51FA1 /* ScriptDocument+Running.m */; };
+		EDDEFE3D07F990EB00E9716B /* ScriptSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0CF55907F04AC800C47BA9 /* ScriptSessionController.m */; };
+		EDE26809079573CD00F19512 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE26807079573CD00F19512 /* AppController.m */; };
+		EDE2680D0795748A00F19512 /* ScriptWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = EDE2680C0795748A00F19512 /* ScriptWindow.nib */; };
+		EDE268110795749500F19512 /* ScriptWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2680F0795749500F19512 /* ScriptWindowController.m */; };
+		EDE5F97A07C510AD00ED7B3A /* ScriptPropertyEditingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE5F97807C510AD00ED7B3A /* ScriptPropertyEditingController.m */; };
+		EDE71D6A07F1AA940024B92C /* Action_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDE71D6407F1AA940024B92C /* Action_Pressed.tiff */; };
+		EDE71D6B07F1AA940024B92C /* Action.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDE71D6507F1AA940024B92C /* Action.tiff */; };
+		EDE71D6C07F1AA950024B92C /* Add_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDE71D6607F1AA940024B92C /* Add_Pressed.tiff */; };
+		EDE71D6D07F1AA950024B92C /* Add.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDE71D6707F1AA940024B92C /* Add.tiff */; };
+		EDE71D6E07F1AA950024B92C /* Remove_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDE71D6807F1AA940024B92C /* Remove_Pressed.tiff */; };
+		EDE71D6F07F1AA950024B92C /* Remove.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EDE71D6907F1AA940024B92C /* Remove.tiff */; };
+		EDEC70C207E1BBC90043FE80 /* ServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC70C007E1BBC90043FE80 /* ServicesController.m */; };
+		EDED77EB07C36C0D00EAEFEC /* Run Button.tif in Resources */ = {isa = PBXBuildFile; fileRef = EDED77EA07C36C0D00EAEFEC /* Run Button.tif */; };
+		EDED781207C3764300EAEFEC /* Stop Button.tif in Resources */ = {isa = PBXBuildFile; fileRef = EDED781107C3764300EAEFEC /* Stop Button.tif */; };
+		EDED785C07C386E100EAEFEC /* Forward Transform.tif in Resources */ = {isa = PBXBuildFile; fileRef = EDED785A07C386E100EAEFEC /* Forward Transform.tif */; };
+		EDED785D07C386E100EAEFEC /* Reverse Transform.tif in Resources */ = {isa = PBXBuildFile; fileRef = EDED785B07C386E100EAEFEC /* Reverse Transform.tif */; };
+		EDED788007C3900500EAEFEC /* Output to Input.tif in Resources */ = {isa = PBXBuildFile; fileRef = EDED787F07C3900500EAEFEC /* Output to Input.tif */; };
+		EDF40D9707B25E75005495E7 /* InputOutputSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF40D9507B25E75005495E7 /* InputOutputSplitView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED0CF58E07F0504C00C47BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED0CF58707F04FE600C47BA9;
+			remoteInfo = pipectl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED0CF5A007F0563B00C47BA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Script Support";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDACC9AA07E0FB4900B70114 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				EDACC9AB07E0FB6300B70114 /* Script Support in CopyFiles */,
+				EDACC9AC07E0FB6300B70114 /* Templates in CopyFiles */,
+				EDACC9AD07E0FB6300B70114 /* PipeHelp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE268640795783800F19512 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED92AA3E0813FBC600CC8006 /* JaguarAppKit.framework in CopyFiles */,
+				ED92AA3F0813FBC600CC8006 /* JaguarFoundation.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Pipe_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pipe_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0A732C07DF7B0C00A51FA1 /* ScriptDocument+Running.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScriptDocument+Running.h"; sourceTree = "<group>"; };
+		ED0A732D07DF7B0C00A51FA1 /* ScriptDocument+Running.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScriptDocument+Running.m"; sourceTree = "<group>"; };
+		ED0CF50D07F02B9800C47BA9 /* ScriptVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptVariable.h; sourceTree = "<group>"; };
+		ED0CF50E07F02B9800C47BA9 /* ScriptVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptVariable.m; sourceTree = "<group>"; };
+		ED0CF55807F04AC800C47BA9 /* ScriptSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptSessionController.h; sourceTree = "<group>"; };
+		ED0CF55907F04AC800C47BA9 /* ScriptSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptSessionController.m; sourceTree = "<group>"; };
+		ED0CF58807F04FE600C47BA9 /* pipectl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pipectl; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0CF58C07F04FFE00C47BA9 /* pipectl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pipectl.m; sourceTree = "<group>"; };
+		ED19064A07B2652E0064E28E /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ED1F81C307C2584B0005C933 /* Pipe.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Pipe.icns; sourceTree = "<group>"; };
+		ED1F82B007C25EEB0005C933 /* Pipe Document.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Pipe Document.icns"; sourceTree = "<group>"; };
+		ED23C8EC07F5A8F2001D12A3 /* ScriptServicesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptServicesArrayController.h; sourceTree = "<group>"; };
+		ED23C8ED07F5A8F2001D12A3 /* ScriptServicesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptServicesArrayController.m; sourceTree = "<group>"; };
+		ED2B566107D886DA00D438FC /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
+		ED3399AA07F97E89003A8753 /* UnitKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnitKit.framework; path = /Library/Frameworks/UnitKit.framework; sourceTree = "<absolute>"; };
+		ED3399AE07F97EA4003A8753 /* ScriptDocument+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScriptDocument+Tests.h"; sourceTree = "<group>"; };
+		ED3399AF07F97EA4003A8753 /* ScriptDocument+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScriptDocument+Tests.m"; sourceTree = "<group>"; };
+		ED357D3F07E36103007478AC /* RunningPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningPreferencePane.h; sourceTree = "<group>"; };
+		ED357D4007E36103007478AC /* RunningPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningPreferencePane.m; sourceTree = "<group>"; };
+		ED357D4707E361EA007478AC /* RunningPreferencePane.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = RunningPreferencePane.nib; sourceTree = "<group>"; };
+		ED357DE107E3637E007478AC /* Appearance Preferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Appearance Preferences.tiff"; sourceTree = "<group>"; };
+		ED357DE707E3639F007478AC /* AppearancePreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearancePreferencePane.h; sourceTree = "<group>"; };
+		ED357DE807E3639F007478AC /* AppearancePreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearancePreferencePane.m; sourceTree = "<group>"; };
+		ED357DF407E36459007478AC /* AppearancePreferencePane.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = AppearancePreferencePane.nib; sourceTree = "<group>"; };
+		ED357E0507E364D3007478AC /* GeneralPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralPreferencePane.h; sourceTree = "<group>"; };
+		ED357E0607E364D3007478AC /* GeneralPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralPreferencePane.m; sourceTree = "<group>"; };
+		ED357E0907E364E1007478AC /* General Preferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "General Preferences.tiff"; sourceTree = "<group>"; };
+		ED357E1707E3660E007478AC /* GeneralPreferencePane.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = GeneralPreferencePane.nib; sourceTree = "<group>"; };
+		ED37E96207F023E80040793B /* ScriptSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptSession.h; sourceTree = "<group>"; };
+		ED37E96307F023E80040793B /* ScriptSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptSession.m; sourceTree = "<group>"; };
+		ED3D33CB07C5E75000B07020 /* ChooseScript.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ChooseScript.nib; sourceTree = "<group>"; };
+		ED3D33CE07C5E76000B07020 /* ChooseScriptController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseScriptController.m; sourceTree = "<group>"; };
+		ED3D33CF07C5E76000B07020 /* ChooseScriptController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseScriptController.h; sourceTree = "<group>"; };
+		ED3FC69907D72A380046DC78 /* Bad Image Placeholder.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Bad Image Placeholder.tiff"; sourceTree = "<group>"; };
+		ED436F4607E28B8F00D98643 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/EncodingAccessory.nib; sourceTree = "<group>"; };
+		ED4377EB07E2902F00D98643 /* ScriptDocumentError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptDocumentError.h; sourceTree = "<group>"; };
+		ED4377EC07E2902F00D98643 /* ScriptDocumentError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptDocumentError.m; sourceTree = "<group>"; };
+		ED53211307D3762100425183 /* DataControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataControlView.h; sourceTree = "<group>"; };
+		ED53211407D3762100425183 /* DataControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataControlView.m; sourceTree = "<group>"; };
+		ED53211507D3762100425183 /* DataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataView.h; sourceTree = "<group>"; };
+		ED53211607D3762100425183 /* DataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataView.m; sourceTree = "<group>"; };
+		ED5B7D5707D4AE7200B949D5 /* Script Support */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Script Support"; sourceTree = "<group>"; };
+		ED6A878A079D32F4005C459E /* ScriptDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptDocument.h; sourceTree = "<group>"; };
+		ED6A878B079D32F4005C459E /* ScriptDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptDocument.m; sourceTree = "<group>"; };
+		ED6A8820079D4AAE005C459E /* ScriptBrowser.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ScriptBrowser.nib; sourceTree = "<group>"; };
+		ED6A8873079D5AEC005C459E /* ScriptBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptBrowserController.h; sourceTree = "<group>"; };
+		ED6A8874079D5AEC005C459E /* ScriptBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptBrowserController.m; sourceTree = "<group>"; };
+		ED6A887D079D5B2B005C459E /* ScriptReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptReference.h; sourceTree = "<group>"; };
+		ED6A887E079D5B2B005C459E /* ScriptReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptReference.m; sourceTree = "<group>"; };
+		ED6D6BA407E6048E007BD460 /* ScriptDocument+UserInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScriptDocument+UserInterface.h"; sourceTree = "<group>"; };
+		ED6D6BA507E6048E007BD460 /* ScriptDocument+UserInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScriptDocument+UserInterface.m"; sourceTree = "<group>"; };
+		ED6D6BF307E60AF4007BD460 /* ScriptWindowControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptWindowControllerBase.h; sourceTree = "<group>"; };
+		ED6D6BF407E60AF4007BD460 /* ScriptWindowControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptWindowControllerBase.m; sourceTree = "<group>"; };
+		ED70049C07C9170300BC7AAB /* Pipe.scriptSuite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pipe.scriptSuite; sourceTree = "<group>"; };
+		ED70049D07C9170300BC7AAB /* Pipe.scriptTerminology */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pipe.scriptTerminology; sourceTree = "<group>"; };
+		ED70049E07C9170300BC7AAB /* Pipe.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pipe.sdef; sourceTree = "<group>"; };
+		ED73DD8307C13A8900B2CCCC /* ScriptBrowserDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptBrowserDocument.h; sourceTree = "<group>"; wrapsLines = 1; };
+		ED73DD8407C13A8900B2CCCC /* ScriptBrowserDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptBrowserDocument.m; sourceTree = "<group>"; };
+		ED73DDE307C1418D00B2CCCC /* ScriptEditorDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptEditorDocument.h; sourceTree = "<group>"; };
+		ED73DDE407C1418D00B2CCCC /* ScriptEditorDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptEditorDocument.m; sourceTree = "<group>"; };
+		ED7A35C607CE1A19006D1774 /* Info Button.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Info Button.tif"; sourceTree = "<group>"; };
+		ED7A36D707CE220E006D1774 /* Errors Button.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Errors Button.tif"; sourceTree = "<group>"; };
+		ED7A36EC07CE3640006D1774 /* Home Page Icon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Home Page Icon.tif"; sourceTree = "<group>"; };
+		ED7C0813079E769D00ADAFA2 /* KwikiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KwikiController.h; sourceTree = "<group>"; };
+		ED7C0814079E769D00ADAFA2 /* KwikiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KwikiController.m; sourceTree = "<group>"; };
+		ED7E9F8707D7621F00D51440 /* Image Script Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Image Script Icon.tiff"; sourceTree = "<group>"; };
+		ED7E9F8807D7621F00D51440 /* Text Script Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Text Script Icon.tiff"; sourceTree = "<group>"; };
+		ED7E9FDF07D765D700D51440 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		ED7EA00807D769BB00D51440 /* HTML Script Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "HTML Script Icon.tiff"; sourceTree = "<group>"; };
+		ED8669EF07CCC96A0017C4A0 /* Welcome.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Welcome.nib; sourceTree = "<group>"; };
+		ED8669FC07CCCBB90017C4A0 /* WelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeWindowController.h; sourceTree = "<group>"; };
+		ED8669FD07CCCBB90017C4A0 /* WelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeWindowController.m; sourceTree = "<group>"; };
+		ED8DA21107C78FC2007DC961 /* PipeHelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PipeHelp; sourceTree = "<group>"; };
+		ED8DA23707C792B4007DC961 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JaguarAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JaguarFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9E947F081146840021A8F6 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		ED9E9480081146840021A8F6 /* Environment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
+		ED9E9481081146840021A8F6 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
+		ED9E9482081146840021A8F6 /* Errors.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
+		ED9E9483081146840021A8F6 /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
+		ED9E9484081146840021A8F6 /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UserDefaults.m; sourceTree = "<group>"; };
+		ED9E967408115B4F0021A8F6 /* SupportFileReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportFileReference.h; sourceTree = "<group>"; };
+		ED9E967508115B4F0021A8F6 /* SupportFileReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportFileReference.m; sourceTree = "<group>"; };
+		ED9E971B081169C40021A8F6 /* SupportFilesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportFilesWindowController.h; sourceTree = "<group>"; };
+		ED9E971C081169C40021A8F6 /* SupportFilesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportFilesWindowController.m; sourceTree = "<group>"; };
+		ED9E972108116A3E0021A8F6 /* SupportFiles.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SupportFiles.nib; sourceTree = "<group>"; };
+		ED9F7413080927A40094FF1A /* VariablesTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariablesTableController.h; sourceTree = "<group>"; };
+		ED9F7414080927A40094FF1A /* VariablesTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariablesTableController.m; sourceTree = "<group>"; };
+		ED9F744408092C3C0094FF1A /* VariableTableColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariableTableColumn.h; sourceTree = "<group>"; };
+		ED9F744508092C3C0094FF1A /* VariableTableColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariableTableColumn.m; sourceTree = "<group>"; };
+		EDAB957A07E08EFD0087D293 /* EncodingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingManager.h; sourceTree = "<group>"; };
+		EDAB957B07E08EFD0087D293 /* EncodingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncodingManager.m; sourceTree = "<group>"; };
+		EDAB95CA07E091AD0087D293 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SelectEncodingsPanel.nib; sourceTree = "<group>"; };
+		EDB8685C07B3C596004B6BDD /* SoftwareLicenseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareLicenseController.h; sourceTree = "<group>"; };
+		EDB8685D07B3C596004B6BDD /* SoftwareLicenseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareLicenseController.m; sourceTree = "<group>"; };
+		EDB868B107B3D2A7004B6BDD /* License.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = License.nib; sourceTree = "<group>"; };
+		EDB868B307B3D2AE004B6BDD /* LicenseWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseWindowController.h; sourceTree = "<group>"; };
+		EDB868B407B3D2AE004B6BDD /* LicenseWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseWindowController.m; sourceTree = "<group>"; };
+		EDDEF86C07F9871A00E9716B /* PipeTests.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipeTests.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDEFE3207F98E5E00E9716B /* ScriptDocument+Running+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScriptDocument+Running+Tests.h"; sourceTree = "<group>"; };
+		EDDEFE3307F98E5E00E9716B /* ScriptDocument+Running+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScriptDocument+Running+Tests.m"; sourceTree = "<group>"; };
+		EDE26806079573CD00F19512 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		EDE26807079573CD00F19512 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		EDE2680C0795748A00F19512 /* ScriptWindow.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ScriptWindow.nib; sourceTree = "<group>"; };
+		EDE2680E0795749500F19512 /* ScriptWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptWindowController.h; sourceTree = "<group>"; };
+		EDE2680F0795749500F19512 /* ScriptWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptWindowController.m; sourceTree = "<group>"; };
+		EDE5F97707C510AD00ED7B3A /* ScriptPropertyEditingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptPropertyEditingController.h; sourceTree = "<group>"; };
+		EDE5F97807C510AD00ED7B3A /* ScriptPropertyEditingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptPropertyEditingController.m; sourceTree = "<group>"; };
+		EDE71D6407F1AA940024B92C /* Action_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Action_Pressed.tiff; sourceTree = "<group>"; };
+		EDE71D6507F1AA940024B92C /* Action.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Action.tiff; sourceTree = "<group>"; };
+		EDE71D6607F1AA940024B92C /* Add_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Add_Pressed.tiff; sourceTree = "<group>"; };
+		EDE71D6707F1AA940024B92C /* Add.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Add.tiff; sourceTree = "<group>"; };
+		EDE71D6807F1AA940024B92C /* Remove_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Remove_Pressed.tiff; sourceTree = "<group>"; };
+		EDE71D6907F1AA940024B92C /* Remove.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Remove.tiff; sourceTree = "<group>"; };
+		EDEC70BF07E1BBC90043FE80 /* ServicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesController.h; sourceTree = "<group>"; };
+		EDEC70C007E1BBC90043FE80 /* ServicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesController.m; sourceTree = "<group>"; };
+		EDED77EA07C36C0D00EAEFEC /* Run Button.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Run Button.tif"; sourceTree = "<group>"; };
+		EDED781107C3764300EAEFEC /* Stop Button.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Stop Button.tif"; sourceTree = "<group>"; };
+		EDED785A07C386E100EAEFEC /* Forward Transform.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Forward Transform.tif"; sourceTree = "<group>"; };
+		EDED785B07C386E100EAEFEC /* Reverse Transform.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Reverse Transform.tif"; sourceTree = "<group>"; };
+		EDED787F07C3900500EAEFEC /* Output to Input.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Output to Input.tif"; sourceTree = "<group>"; };
+		EDF40D9407B25E75005495E7 /* InputOutputSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputOutputSplitView.h; sourceTree = "<group>"; };
+		EDF40D9507B25E75005495E7 /* InputOutputSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputOutputSplitView.m; sourceTree = "<group>"; };
+		EDF904AF07F9864C00599532 /* PipeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "PipeTests-Info.plist"; path = "/Users/kianga/Code/Pipe/PipeTests-Info.plist"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				ED7E9FE007D765D700D51440 /* WebKit.framework in Frameworks */,
+				ED92A9FC0813FB8D00CC8006 /* JaguarAppKit.framework in Frameworks */,
+				ED92A9FD0813FB8D00CC8006 /* JaguarFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0CF58607F04FE600C47BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDEF86907F9871A00E9716B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDEF8F007F9884000E9716B /* Cocoa.framework in Frameworks */,
+				EDDEF87407F9876800E9716B /* UnitKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDCB9FC1081C16CC00EF7DA5 /* Application */,
+				ED6D6BA007E6041B007BD460 /* Document Model */,
+				ED6D6BA107E60447007BD460 /* Document Controller */,
+				ED6A8881079D5B33005C459E /* Misc Model */,
+				ED6A8882079D5B3A005C459E /* Misc Controller */,
+				ED357D3C07E360F0007478AC /* Preferences */,
+				EDAB957707E08EDE0087D293 /* Third-Party */,
+				EDF40D9107B25E63005495E7 /* View */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Pipe.app */,
+				ED0CF58807F04FE600C47BA9 /* pipectl */,
+				EDDEF86C07F9871A00E9716B /* PipeTests.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* LiveScript */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				ED33999D07F97E3D003A8753 /* Tests */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				EDF904AF07F9864C00599532 /* PipeTests-Info.plist */,
+			);
+			name = LiveScript;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E947F081146840021A8F6 /* Environment.h */,
+				ED9E9480081146840021A8F6 /* Environment.m */,
+				ED9E9481081146840021A8F6 /* Errors.h */,
+				ED9E9482081146840021A8F6 /* Errors.m */,
+				ED9E9483081146840021A8F6 /* UserDefaults.h */,
+				ED9E9484081146840021A8F6 /* UserDefaults.m */,
+				ED0CF58C07F04FFE00C47BA9 /* pipectl.m */,
+				32CA4F630368D1EE00C91783 /* Pipe_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDED785E07C386E900EAEFEC /* Icons */,
+				ED357D4907E36200007478AC /* Nib Files */,
+				ED5B7D5707D4AE7200B949D5 /* Script Support */,
+				ED2B566107D886DA00D438FC /* Templates */,
+				ED70049C07C9170300BC7AAB /* Pipe.scriptSuite */,
+				ED70049D07C9170300BC7AAB /* Pipe.scriptTerminology */,
+				ED70049E07C9170300BC7AAB /* Pipe.sdef */,
+				ED8DA23707C792B4007DC961 /* Credits.html */,
+				ED8DA21107C78FC2007DC961 /* PipeHelp */,
+				ED19064E07B2657C0064E28E /* Localizable.strings */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED92A9FA0813FB8D00CC8006 /* JaguarAppKit.framework */,
+				ED92A9FB0813FB8D00CC8006 /* JaguarFoundation.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				ED3399AA07F97E89003A8753 /* UnitKit.framework */,
+				ED7E9FDF07D765D700D51440 /* WebKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED33999D07F97E3D003A8753 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EDDEFE3207F98E5E00E9716B /* ScriptDocument+Running+Tests.h */,
+				EDDEFE3307F98E5E00E9716B /* ScriptDocument+Running+Tests.m */,
+				ED3399AE07F97EA4003A8753 /* ScriptDocument+Tests.h */,
+				ED3399AF07F97EA4003A8753 /* ScriptDocument+Tests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		ED357D3C07E360F0007478AC /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				ED357E0507E364D3007478AC /* GeneralPreferencePane.h */,
+				ED357E0607E364D3007478AC /* GeneralPreferencePane.m */,
+				ED357DE707E3639F007478AC /* AppearancePreferencePane.h */,
+				ED357DE807E3639F007478AC /* AppearancePreferencePane.m */,
+				ED357D3F07E36103007478AC /* RunningPreferencePane.h */,
+				ED357D4007E36103007478AC /* RunningPreferencePane.m */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		ED357D4907E36200007478AC /* Nib Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDE2680C0795748A00F19512 /* ScriptWindow.nib */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				ED6A8820079D4AAE005C459E /* ScriptBrowser.nib */,
+				EDB868B107B3D2A7004B6BDD /* License.nib */,
+				ED3D33CB07C5E75000B07020 /* ChooseScript.nib */,
+				ED8669EF07CCC96A0017C4A0 /* Welcome.nib */,
+				ED357D4707E361EA007478AC /* RunningPreferencePane.nib */,
+				ED357DF407E36459007478AC /* AppearancePreferencePane.nib */,
+				ED357E1707E3660E007478AC /* GeneralPreferencePane.nib */,
+				ED9E972108116A3E0021A8F6 /* SupportFiles.nib */,
+			);
+			name = "Nib Files";
+			sourceTree = "<group>";
+		};
+		ED6A8881079D5B33005C459E /* Misc Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED4377EB07E2902F00D98643 /* ScriptDocumentError.h */,
+				ED4377EC07E2902F00D98643 /* ScriptDocumentError.m */,
+				ED6A887D079D5B2B005C459E /* ScriptReference.h */,
+				ED6A887E079D5B2B005C459E /* ScriptReference.m */,
+				ED37E96207F023E80040793B /* ScriptSession.h */,
+				ED37E96307F023E80040793B /* ScriptSession.m */,
+				ED0CF50D07F02B9800C47BA9 /* ScriptVariable.h */,
+				ED0CF50E07F02B9800C47BA9 /* ScriptVariable.m */,
+				ED9E967408115B4F0021A8F6 /* SupportFileReference.h */,
+				ED9E967508115B4F0021A8F6 /* SupportFileReference.m */,
+			);
+			name = "Misc Model";
+			sourceTree = "<group>";
+		};
+		ED6A8882079D5B3A005C459E /* Misc Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED9F7413080927A40094FF1A /* VariablesTableController.h */,
+				ED9F7414080927A40094FF1A /* VariablesTableController.m */,
+				ED23C8EC07F5A8F2001D12A3 /* ScriptServicesArrayController.h */,
+				ED23C8ED07F5A8F2001D12A3 /* ScriptServicesArrayController.m */,
+				ED0CF55807F04AC800C47BA9 /* ScriptSessionController.h */,
+				ED0CF55907F04AC800C47BA9 /* ScriptSessionController.m */,
+				EDEC70BF07E1BBC90043FE80 /* ServicesController.h */,
+				EDEC70C007E1BBC90043FE80 /* ServicesController.m */,
+				EDB8685C07B3C596004B6BDD /* SoftwareLicenseController.h */,
+				EDB8685D07B3C596004B6BDD /* SoftwareLicenseController.m */,
+				ED7C0813079E769D00ADAFA2 /* KwikiController.h */,
+				ED7C0814079E769D00ADAFA2 /* KwikiController.m */,
+				EDB868B307B3D2AE004B6BDD /* LicenseWindowController.h */,
+				EDB868B407B3D2AE004B6BDD /* LicenseWindowController.m */,
+				ED3D33CE07C5E76000B07020 /* ChooseScriptController.m */,
+				ED3D33CF07C5E76000B07020 /* ChooseScriptController.h */,
+				ED8669FC07CCCBB90017C4A0 /* WelcomeWindowController.h */,
+				ED8669FD07CCCBB90017C4A0 /* WelcomeWindowController.m */,
+				ED9E971B081169C40021A8F6 /* SupportFilesWindowController.h */,
+				ED9E971C081169C40021A8F6 /* SupportFilesWindowController.m */,
+			);
+			name = "Misc Controller";
+			sourceTree = "<group>";
+		};
+		ED6D6BA007E6041B007BD460 /* Document Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D6BA407E6048E007BD460 /* ScriptDocument+UserInterface.h */,
+				ED6D6BA507E6048E007BD460 /* ScriptDocument+UserInterface.m */,
+				ED73DD8307C13A8900B2CCCC /* ScriptBrowserDocument.h */,
+				ED73DD8407C13A8900B2CCCC /* ScriptBrowserDocument.m */,
+				ED0A732C07DF7B0C00A51FA1 /* ScriptDocument+Running.h */,
+				ED0A732D07DF7B0C00A51FA1 /* ScriptDocument+Running.m */,
+				ED6A878A079D32F4005C459E /* ScriptDocument.h */,
+				ED6A878B079D32F4005C459E /* ScriptDocument.m */,
+				ED73DDE307C1418D00B2CCCC /* ScriptEditorDocument.h */,
+				ED73DDE407C1418D00B2CCCC /* ScriptEditorDocument.m */,
+			);
+			name = "Document Model";
+			sourceTree = "<group>";
+		};
+		ED6D6BA107E60447007BD460 /* Document Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D6BF307E60AF4007BD460 /* ScriptWindowControllerBase.h */,
+				ED6D6BF407E60AF4007BD460 /* ScriptWindowControllerBase.m */,
+				ED6A8873079D5AEC005C459E /* ScriptBrowserController.h */,
+				ED6A8874079D5AEC005C459E /* ScriptBrowserController.m */,
+				EDE5F97707C510AD00ED7B3A /* ScriptPropertyEditingController.h */,
+				EDE5F97807C510AD00ED7B3A /* ScriptPropertyEditingController.m */,
+				EDE2680E0795749500F19512 /* ScriptWindowController.h */,
+				EDE2680F0795749500F19512 /* ScriptWindowController.m */,
+			);
+			name = "Document Controller";
+			sourceTree = "<group>";
+		};
+		EDAB957707E08EDE0087D293 /* Third-Party */ = {
+			isa = PBXGroup;
+			children = (
+				ED436F4507E28B8F00D98643 /* EncodingAccessory.nib */,
+				EDAB95C907E091AD0087D293 /* SelectEncodingsPanel.nib */,
+				EDAB957A07E08EFD0087D293 /* EncodingManager.h */,
+				EDAB957B07E08EFD0087D293 /* EncodingManager.m */,
+			);
+			name = "Third-Party";
+			sourceTree = "<group>";
+		};
+		EDCB9FC1081C16CC00EF7DA5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EDE26806079573CD00F19512 /* AppController.h */,
+				EDE26807079573CD00F19512 /* AppController.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		EDED785E07C386E900EAEFEC /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EDE71D6407F1AA940024B92C /* Action_Pressed.tiff */,
+				EDE71D6507F1AA940024B92C /* Action.tiff */,
+				EDE71D6607F1AA940024B92C /* Add_Pressed.tiff */,
+				EDE71D6707F1AA940024B92C /* Add.tiff */,
+				EDE71D6807F1AA940024B92C /* Remove_Pressed.tiff */,
+				EDE71D6907F1AA940024B92C /* Remove.tiff */,
+				ED357E0907E364E1007478AC /* General Preferences.tiff */,
+				ED357DE107E3637E007478AC /* Appearance Preferences.tiff */,
+				ED7EA00807D769BB00D51440 /* HTML Script Icon.tiff */,
+				ED7E9F8707D7621F00D51440 /* Image Script Icon.tiff */,
+				ED7E9F8807D7621F00D51440 /* Text Script Icon.tiff */,
+				ED3FC69907D72A380046DC78 /* Bad Image Placeholder.tiff */,
+				ED7A36EC07CE3640006D1774 /* Home Page Icon.tif */,
+				ED1F81C307C2584B0005C933 /* Pipe.icns */,
+				ED1F82B007C25EEB0005C933 /* Pipe Document.icns */,
+				ED7A36D707CE220E006D1774 /* Errors Button.tif */,
+				ED7A35C607CE1A19006D1774 /* Info Button.tif */,
+				EDED787F07C3900500EAEFEC /* Output to Input.tif */,
+				EDED785A07C386E100EAEFEC /* Forward Transform.tif */,
+				EDED785B07C386E100EAEFEC /* Reverse Transform.tif */,
+				EDED781107C3764300EAEFEC /* Stop Button.tif */,
+				EDED77EA07C36C0D00EAEFEC /* Run Button.tif */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		EDF40D9107B25E63005495E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED9F744408092C3C0094FF1A /* VariableTableColumn.h */,
+				ED9F744508092C3C0094FF1A /* VariableTableColumn.m */,
+				ED53211307D3762100425183 /* DataControlView.h */,
+				ED53211407D3762100425183 /* DataControlView.m */,
+				ED53211507D3762100425183 /* DataView.h */,
+				ED53211607D3762100425183 /* DataView.m */,
+				EDF40D9407B25E75005495E7 /* InputOutputSplitView.h */,
+				EDF40D9507B25E75005495E7 /* InputOutputSplitView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EDDEF86607F9871A00E9716B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDEFE3407F98E5E00E9716B /* ScriptDocument+Running+Tests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Pipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837327BA21ABA40E0022715D /* Build configuration list for PBXNativeTarget "Pipe" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				EDE268640795783800F19512 /* CopyFiles */,
+				EDACC9AA07E0FB4900B70114 /* CopyFiles */,
+				EDACC13A07E0F76300B70114 /* ShellScript */,
+				ED0CF5A007F0563B00C47BA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED0CF58F07F0504C00C47BA9 /* PBXTargetDependency */,
+			);
+			name = Pipe;
+			productInstallPath = "$(HOME)/Applications";
+			productName = LiveScript;
+			productReference = 8D1107320486CEB800E47090 /* Pipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED0CF58707F04FE600C47BA9 /* pipectl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837327B921ABA40E0022715D /* Build configuration list for PBXNativeTarget "pipectl" */;
+			buildPhases = (
+				ED0CF58507F04FE600C47BA9 /* Sources */,
+				ED0CF58607F04FE600C47BA9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pipectl;
+			productName = pipectl;
+			productReference = ED0CF58807F04FE600C47BA9 /* pipectl */;
+			productType = "com.apple.product-type.tool";
+		};
+		EDDEF86B07F9871A00E9716B /* PipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837327BB21ABA40E0022715D /* Build configuration list for PBXNativeTarget "PipeTests" */;
+			buildPhases = (
+				EDDEF86607F9871A00E9716B /* Headers */,
+				EDDEF86707F9871A00E9716B /* Resources */,
+				EDDEF86807F9871A00E9716B /* Sources */,
+				EDDEF86907F9871A00E9716B /* Frameworks */,
+				EDDEF86A07F9871A00E9716B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PipeTests;
+			productName = PipeTests;
+			productReference = EDDEF86C07F9871A00E9716B /* PipeTests.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 837327B821ABA40E0022715D /* Build configuration list for PBXProject "Pipe" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* LiveScript */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Pipe */,
+				ED0CF58707F04FE600C47BA9 /* pipectl */,
+				EDDEF86B07F9871A00E9716B /* PipeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				EDE2680D0795748A00F19512 /* ScriptWindow.nib in Resources */,
+				ED6A8821079D4AAE005C459E /* ScriptBrowser.nib in Resources */,
+				ED19064F07B2657C0064E28E /* Localizable.strings in Resources */,
+				EDB868B207B3D2A7004B6BDD /* License.nib in Resources */,
+				ED1F81C407C2584B0005C933 /* Pipe.icns in Resources */,
+				ED1F82B107C25EEB0005C933 /* Pipe Document.icns in Resources */,
+				EDED77EB07C36C0D00EAEFEC /* Run Button.tif in Resources */,
+				EDED781207C3764300EAEFEC /* Stop Button.tif in Resources */,
+				EDED785C07C386E100EAEFEC /* Forward Transform.tif in Resources */,
+				EDED785D07C386E100EAEFEC /* Reverse Transform.tif in Resources */,
+				EDED788007C3900500EAEFEC /* Output to Input.tif in Resources */,
+				ED3D33CC07C5E75000B07020 /* ChooseScript.nib in Resources */,
+				ED8DA23807C792B4007DC961 /* Credits.html in Resources */,
+				ED8669F007CCC96A0017C4A0 /* Welcome.nib in Resources */,
+				ED7A35C707CE1A19006D1774 /* Info Button.tif in Resources */,
+				ED7A36D807CE220E006D1774 /* Errors Button.tif in Resources */,
+				ED7A36ED07CE3640006D1774 /* Home Page Icon.tif in Resources */,
+				ED3FC69A07D72A380046DC78 /* Bad Image Placeholder.tiff in Resources */,
+				ED7E9F8907D7621F00D51440 /* Image Script Icon.tiff in Resources */,
+				ED7E9F8A07D7621F00D51440 /* Text Script Icon.tiff in Resources */,
+				ED7EA00907D769BB00D51440 /* HTML Script Icon.tiff in Resources */,
+				EDAB95CB07E091AD0087D293 /* SelectEncodingsPanel.nib in Resources */,
+				ED436F4707E28B8F00D98643 /* EncodingAccessory.nib in Resources */,
+				ED357D4807E361EA007478AC /* RunningPreferencePane.nib in Resources */,
+				ED357DE207E3637E007478AC /* Appearance Preferences.tiff in Resources */,
+				ED357DF507E36459007478AC /* AppearancePreferencePane.nib in Resources */,
+				ED357E0A07E364E1007478AC /* General Preferences.tiff in Resources */,
+				ED357E1807E3660E007478AC /* GeneralPreferencePane.nib in Resources */,
+				EDE71D6A07F1AA940024B92C /* Action_Pressed.tiff in Resources */,
+				EDE71D6B07F1AA940024B92C /* Action.tiff in Resources */,
+				EDE71D6C07F1AA950024B92C /* Add_Pressed.tiff in Resources */,
+				EDE71D6D07F1AA950024B92C /* Add.tiff in Resources */,
+				EDE71D6E07F1AA950024B92C /* Remove_Pressed.tiff in Resources */,
+				EDE71D6F07F1AA950024B92C /* Remove.tiff in Resources */,
+				ED9E972208116A3E0021A8F6 /* SupportFiles.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDEF86707F9871A00E9716B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDACC13A07E0F76300B70114 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			comments = "Removes all header file and version control files from the build product.\n";
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nfind \"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\" -name '*.h' -delete\nfind \"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\" -name '.svn' -exec rm -rf {} \\; -prune\n";
+		};
+		EDDEF86A07F9871A00E9716B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "export DYLD_FRAMEWORK_PATH=$LIBRARY_SEARCH_PATHS\n/usr/local/bin/ukrun \"$BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				EDE26809079573CD00F19512 /* AppController.m in Sources */,
+				EDE268110795749500F19512 /* ScriptWindowController.m in Sources */,
+				ED6A878D079D32F4005C459E /* ScriptDocument.m in Sources */,
+				ED6A8876079D5AEC005C459E /* ScriptBrowserController.m in Sources */,
+				ED6A8880079D5B2B005C459E /* ScriptReference.m in Sources */,
+				ED7C0816079E769D00ADAFA2 /* KwikiController.m in Sources */,
+				EDF40D9707B25E75005495E7 /* InputOutputSplitView.m in Sources */,
+				EDB8685F07B3C596004B6BDD /* SoftwareLicenseController.m in Sources */,
+				EDB868B607B3D2AE004B6BDD /* LicenseWindowController.m in Sources */,
+				ED73DD8607C13A8900B2CCCC /* ScriptBrowserDocument.m in Sources */,
+				ED73DDE607C1418D00B2CCCC /* ScriptEditorDocument.m in Sources */,
+				EDE5F97A07C510AD00ED7B3A /* ScriptPropertyEditingController.m in Sources */,
+				ED3D33D007C5E76000B07020 /* ChooseScriptController.m in Sources */,
+				ED8669FF07CCCBB90017C4A0 /* WelcomeWindowController.m in Sources */,
+				ED53211807D3762100425183 /* DataControlView.m in Sources */,
+				ED53211A07D3762100425183 /* DataView.m in Sources */,
+				ED0A732F07DF7B0C00A51FA1 /* ScriptDocument+Running.m in Sources */,
+				EDAB957D07E08EFD0087D293 /* EncodingManager.m in Sources */,
+				EDEC70C207E1BBC90043FE80 /* ServicesController.m in Sources */,
+				ED4377EE07E2902F00D98643 /* ScriptDocumentError.m in Sources */,
+				ED357D4207E36103007478AC /* RunningPreferencePane.m in Sources */,
+				ED357DEA07E3639F007478AC /* AppearancePreferencePane.m in Sources */,
+				ED357E0807E364D3007478AC /* GeneralPreferencePane.m in Sources */,
+				ED6D6BA707E6048E007BD460 /* ScriptDocument+UserInterface.m in Sources */,
+				ED6D6BF607E60AF4007BD460 /* ScriptWindowControllerBase.m in Sources */,
+				ED37E96507F023E80040793B /* ScriptSession.m in Sources */,
+				ED0CF51007F02B9800C47BA9 /* ScriptVariable.m in Sources */,
+				ED0CF55B07F04AC800C47BA9 /* ScriptSessionController.m in Sources */,
+				ED23C8EF07F5A8F2001D12A3 /* ScriptServicesArrayController.m in Sources */,
+				ED9F7416080927A40094FF1A /* VariablesTableController.m in Sources */,
+				ED9F744708092C3C0094FF1A /* VariableTableColumn.m in Sources */,
+				ED9E9486081146840021A8F6 /* Environment.m in Sources */,
+				ED9E9488081146840021A8F6 /* Errors.m in Sources */,
+				ED9E948A081146840021A8F6 /* UserDefaults.m in Sources */,
+				ED9E967708115B4F0021A8F6 /* SupportFileReference.m in Sources */,
+				ED9E971E081169C40021A8F6 /* SupportFilesWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0CF58507F04FE600C47BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0CF58D07F04FFE00C47BA9 /* pipectl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDEF86807F9871A00E9716B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDEF87107F9874D00E9716B /* ScriptDocument+Tests.m in Sources */,
+				EDDEF93A07F989BE00E9716B /* ScriptDocument.m in Sources */,
+				EDDEFE3507F98E5E00E9716B /* ScriptDocument+Running+Tests.m in Sources */,
+				EDDEFE3607F98EF200E9716B /* ScriptSession.m in Sources */,
+				EDDEFE3707F98F5000E9716B /* ScriptVariable.m in Sources */,
+				EDDEFE3C07F9901800E9716B /* ScriptDocument+Running.m in Sources */,
+				EDDEFE3D07F990EB00E9716B /* ScriptSessionController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED0CF58F07F0504C00C47BA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED0CF58707F04FE600C47BA9 /* pipectl */;
+			targetProxy = ED0CF58E07F0504C00C47BA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		ED19064E07B2657C0064E28E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED19064A07B2652E0064E28E /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		ED436F4507E28B8F00D98643 /* EncodingAccessory.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED436F4607E28B8F00D98643 /* English */,
+			);
+			name = EncodingAccessory.nib;
+			sourceTree = "<group>";
+		};
+		EDAB95C907E091AD0087D293 /* SelectEncodingsPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDAB95CA07E091AD0087D293 /* English */,
+			);
+			name = SelectEncodingsPanel.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8373276F21ABA3FF0022715D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		8373277021ABA3FF0022715D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		8373277121ABA3FF0022715D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		8373277221ABA3FF0022715D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/kianga/Library/Caches/Xcode/Products;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_MODE_FLAG = "u+w,go-w,a+rX";
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = Pipe;
+				TARGET_ZERO_LINK = YES;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = "$(TARGET_ZERO_LINK)";
+			};
+			name = Development;
+		};
+		8373277321ABA3FF0022715D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/kianga/Library/Caches/Xcode/Products;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEPLOYMENT_BUILD;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_MODE_FLAG = "u+w,go-w,a+rX";
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PREBINDING = NO;
+				PRODUCT_NAME = Pipe;
+				TARGET_ZERO_LINK = YES;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8373277421ABA3FF0022715D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/kianga/Library/Caches/Xcode/Products;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_MODE_FLAG = "u+w,go-w,a+rX";
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = Pipe;
+				TARGET_ZERO_LINK = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		8373277521ABA3FF0022715D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pipectl;
+				SECTORDER_FLAGS = "";
+				TARGET_ZERO_LINK = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = "$(TARGET_ZERO_LINK)";
+			};
+			name = Development;
+		};
+		8373277621ABA3FF0022715D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEPLOYMENT_BUILD;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = pipectl;
+				SECTORDER_FLAGS = "";
+				TARGET_ZERO_LINK = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8373277721ABA3FF0022715D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pipectl;
+				SECTORDER_FLAGS = "";
+				TARGET_ZERO_LINK = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		8373277821ABA3FF0022715D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PipeTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PipeTests;
+				SECTORDER_FLAGS = "";
+				TARGET_ZERO_LINK = NO;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = "$(TARGET_ZERO_LINK)";
+			};
+			name = Development;
+		};
+		8373277921ABA3FF0022715D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEPLOYMENT_BUILD;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PipeTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = PipeTests;
+				SECTORDER_FLAGS = "";
+				TARGET_ZERO_LINK = NO;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8373277A21ABA3FF0022715D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pipe_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "PipeTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PipeTests;
+				SECTORDER_FLAGS = "";
+				TARGET_ZERO_LINK = NO;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		837327B821ABA40E0022715D /* Build configuration list for PBXProject "Pipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8373276F21ABA3FF0022715D /* Development */,
+				8373277021ABA3FF0022715D /* Deployment */,
+				8373277121ABA3FF0022715D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		837327B921ABA40E0022715D /* Build configuration list for PBXNativeTarget "pipectl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8373277521ABA3FF0022715D /* Development */,
+				8373277621ABA3FF0022715D /* Deployment */,
+				8373277721ABA3FF0022715D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		837327BA21ABA40E0022715D /* Build configuration list for PBXNativeTarget "Pipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8373277221ABA3FF0022715D /* Development */,
+				8373277321ABA3FF0022715D /* Deployment */,
+				8373277421ABA3FF0022715D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		837327BB21ABA40E0022715D /* Build configuration list for PBXNativeTarget "PipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8373277821ABA3FF0022715D /* Development */,
+				8373277921ABA3FF0022715D /* Deployment */,
+				8373277A21ABA3FF0022715D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
